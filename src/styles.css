@@ -11,8 +11,9 @@ a{
     text-decoration: none;
     color: #444;
     transition: .4s;
+
 }
 
 a:hover {
-    color: #dec129;
+    color: #56aaef;
 }
