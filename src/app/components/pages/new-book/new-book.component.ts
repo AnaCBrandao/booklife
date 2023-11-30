@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-book.component.css']
 })
 export class NewBookComponent implements OnInit {
+  btnText = 'compartilhar';
 
   constructor() { }
 
