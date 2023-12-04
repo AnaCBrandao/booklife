@@ -4,7 +4,8 @@
   <img width="90px" src="https://www.freeiconspng.com/uploads/book-icon-black-good-galleries--24.jpg"/>
 </div>
 <div align="center">
-  <p></p>
+  <p>A website for people to share opinions and reviews about the books they are reading or intend to read.</p>
+  <p> Made with Angular 14 and consuming a API developed with AdonisJS.</p>
   <img src=""/>
 </div>
 
