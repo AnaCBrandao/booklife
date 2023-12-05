@@ -37,7 +37,7 @@ form {
 
 .form-group input,
 .form-group textarea {
-    padding0.6em;
+    padding: 0.6em;
     font-size: 0.8em;
     color: #777;
 }
