@@ -23,7 +23,7 @@
 ## Getting started with the AdonisJs API
 
 1. Clone the API repo using `git clone git@github.com:matheusbattisti/curso_angular_yt.git`
-2. 2. Move yourself to the appropriate directory; `cd curso_angular_yt`
+2. Move yourself to the appropriate directory; `cd curso_angular_yt`
 3. Run `npm install` or `yarn` to install dependencies
 4. Run `node ace generate:key` an copy the API key
 5. Paste the key in .env file
