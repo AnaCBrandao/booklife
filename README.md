@@ -32,3 +32,4 @@
 ## Getting started with the app
 
 1. Run `ng serve` to start the web application
+2. Access http://localhost:4200 in your browser
