@@ -1,2 +1,2 @@
 <h2>Conte-nos sobre o <span>livro</span></h2>
-<app-book-form [btnText]="btnText"></app-book-form>
+<app-book-form [btnText]="btnText" (onSubmit)="createHandler($event)"></app-book-form>

@@ -11,6 +11,8 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { NewBookComponent } from './components/pages/new-book/new-book.component';
 import { BookFormComponent } from './components/book-form/book-form.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,16 @@ import { BookFormComponent } from './components/book-form/book-form.component';
     AboutComponent,
     HomeComponent,
     NewBookComponent,
-    BookFormComponent
+    BookFormComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

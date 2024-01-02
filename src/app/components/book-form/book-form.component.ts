@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms'
+
+import { Book } from 'src/app/interfaces/Book';
 
 @Component({
   selector: 'app-book-form',
@@ -7,7 +9,7 @@ import {FormGroup, FormControl, Validators} from '@angular/forms'
   styleUrls: ['./book-form.component.css']
 })
 export class BookFormComponent implements OnInit {
-
+  @Output() onSubmit = new EventEmitter<Book>()
   @Input() btnText!:string;
 
   bookForm!: FormGroup;
@@ -31,10 +33,18 @@ export class BookFormComponent implements OnInit {
     return this.bookForm.get('description')!;
   }
 
+  onFileSelected(event: any){
+    const file : File = event.target.files[0];
+    
+    this.bookForm.patchValue({image : file})
+  }
+
   submit(){
     if(this.bookForm.invalid){
       return;
     }
+
+    this.onSubmit.emit(this.bookForm.value)
   }
 
 }
