@@ -1,0 +1,47 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-container h1{
+    margin-bottom: 0.5em;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.book {
+    width: 32%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.book h3, .book p {
+    margin-bottom: 1em;
+}
+
+.book .date {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+a {
+    color:#56aaef;
+    padding: .3em .6em;
+}
+
+a:hover {
+    background-color: #efefef;
+}

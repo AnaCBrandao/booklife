@@ -1,6 +1,19 @@
 <div class="home-container">
     <h1>Veja o que estão lendo</h1>
-    <div *ngFor="let book of books">
-         <h2>{{book.title}}</h2>
+
+    <div *ngIf="books.length > 0; else noBooks">
+        <div class="books-container">
+            <div class="book" *ngFor="let book of books">
+                <img src="{{baseApiUrl}}/uploads/{{book.image}}" alt="{{book.title}}">
+                <h3>{{book.title}}</h3>
+                <p class="date">Em: {{book.created_at}}</p>
+                <p>Comentários: {{book.comments!.length}}</p>
+                <p><a routerLink="books/{{book.id}}">Detalhes</a></p>
+           </div>
+        </div>   
     </div>
+
+    <ng-template #noBooks>
+        <h1>Não há livros cadastrados</h1>
+    </ng-template>
 </div>
