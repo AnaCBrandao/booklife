@@ -1,5 +1,11 @@
 <div class="home-container">
     <h1>Veja o que estão lendo</h1>
+    <div class="search-container">
+        <form>
+            <fa-icon [icon]="faSearch"></fa-icon>
+            <input type="text" placeholder="Busque por um livro..." (input)="search($event)">
+        </form>
+    </div>
 
     <div *ngIf="books.length > 0; else noBooks">
         <div class="books-container">

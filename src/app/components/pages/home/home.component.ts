@@ -16,6 +16,9 @@ export class HomeComponent implements OnInit {
   books: Book[] = [];
   baseApiUrl = environment.baseApiUrl
 
+  faSearch = faSearch;
+  searchTerm:string = "";
+
   constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
@@ -31,6 +34,15 @@ export class HomeComponent implements OnInit {
       this.books = data
 
     })
+  }
+
+  search(e: Event): void {
+    const target = e.target as HTMLInputElement;
+    const value = target.value;
+
+    this.books = this.allBooks.filter((book) => {
+      return book.title.toLowerCase().includes(value);
+    });
   }
 
 }
