@@ -13,6 +13,7 @@ import { NewBookComponent } from './components/pages/new-book/new-book.component
 import { BookFormComponent } from './components/book-form/book-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BookComponent } from './components/pages/book/book.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     NewBookComponent,
     BookFormComponent,
-    MessagesComponent
+    MessagesComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,

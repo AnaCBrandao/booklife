@@ -24,4 +24,10 @@ export class BookService {
    createBook(formData: FormData) : Observable<FormData>{
       return this.http.post<FormData>(this.apiUrl, formData);
    }
+
+   getBook(id: number): Observable<Response<Book>> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Response<Book>>(url)
+  }
+
 }
