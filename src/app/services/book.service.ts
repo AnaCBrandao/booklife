@@ -30,4 +30,13 @@ export class BookService {
     return this.http.get<Response<Book>>(url)
   }
 
+  removeBook(id: number) {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.delete(url)
+  }
+
+  updateBook(id: number, formData: FormData){
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.put<FormData>(url, formData);
+  }
 }

@@ -14,6 +14,7 @@ import { BookFormComponent } from './components/book-form/book-form.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BookComponent } from './components/pages/book/book.component';
+import { EditBookComponent } from './components/pages/edit-book/edit-book.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BookComponent } from './components/pages/book/book.component';
     NewBookComponent,
     BookFormComponent,
     MessagesComponent,
-    BookComponent
+    BookComponent,
+    EditBookComponent
   ],
   imports: [
     BrowserModule,

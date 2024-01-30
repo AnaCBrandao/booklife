@@ -11,16 +11,18 @@ import { Book } from 'src/app/interfaces/Book';
 export class BookFormComponent implements OnInit {
   @Output() onSubmit = new EventEmitter<Book>()
   @Input() btnText!:string;
+  @Input() bookData: Book | null = null; 
+
 
   bookForm!: FormGroup;
-
+  
   constructor() { }
 
   ngOnInit(): void {
     this.bookForm = new FormGroup({
-      id: new FormControl(''),
-      title: new FormControl('', [Validators.required]),
-      description: new FormControl('', [Validators.required]),
+      id: new FormControl(this.bookData ? this.bookData.id : ''),
+      title: new FormControl(this.bookData ? this.bookData.title : '', [Validators.required]),
+      description: new FormControl(this.bookData ? this.bookData.description : '', [Validators.required]),
       image: new FormControl(''),  
     })
   }
