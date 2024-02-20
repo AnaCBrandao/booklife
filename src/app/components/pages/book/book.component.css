@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -13,20 +13,23 @@ h1 {
 }
 
 img {
-    max-width: 500px;
+   
+    max-width: 50%;
     margin-bottom: 0 auto 1em;
 }
 
 .about-book, .actions {
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
     padding: 1.2em;
-    width: 100%;
 }
 
-.actions {
-    background-color: #eee;
+.about-book {
+    width: 60%;
 }
+
+.about-book p {
+    margin-bottom: 2em;
+}
+
 
 .comments {
     margin-bottom: 1em;
@@ -65,4 +68,19 @@ img {
 
 .author span {
     font-weight: bold;
+}
+
+.book .content {
+    background-color: #454545;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book-title {
+    width: 40%;
+    min-width: 300px;
 }

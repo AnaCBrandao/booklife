@@ -23,7 +23,7 @@ export class NewBookComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createHandler(book: Book){
+  async createHandler(book: Book){
     const formData = new FormData();
 
     formData.append("title", book.title)
@@ -33,7 +33,7 @@ export class NewBookComponent implements OnInit {
       formData.append("image", book.image)
     }
 
-    //await this.bookService.createBook(formData).subscribe();
+    await this.bookService.createBook(formData).subscribe();
 
     this.messagesService.add('Livro publicado com sucesso!');
 

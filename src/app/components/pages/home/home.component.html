@@ -10,16 +10,12 @@
     <div *ngIf="books.length > 0; else noBooks">
         <div class="books-container">
             <div class="book" *ngFor="let book of books">
-                <img src="{{baseApiUrl}}/uploads/{{book.image}}" alt="{{book.title}}">
-                <h3>{{book.title}}</h3>
-                <p class="date">Em: {{book.created_at}}</p>
-                <p>Comentários: {{book.comments!.length}}</p>
-                <p><a routerLink="books/{{book.id}}">Detalhes</a></p>
+                <a routerLink="books/{{book.id}}"><img src="{{baseApiUrl}}uploads/{{book.image}}" alt="{{book.title}}"></a>
            </div>
         </div>   
     </div>
 
     <ng-template #noBooks>
-        <h1>Não há livros cadastrados</h1>
+        <h1>Nenhum livro encontrado</h1>
     </ng-template>
 </div>

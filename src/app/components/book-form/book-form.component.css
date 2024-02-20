@@ -4,3 +4,14 @@
     border-left: 3px solid red;
     padding-left: .2em;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    min-width: 60%;
+    padding: 1em;
+}
+
+

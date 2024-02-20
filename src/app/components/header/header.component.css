@@ -3,6 +3,8 @@ nav {
     justify-content: space-between;
     padding: 1em;
     border-bottom:1px solid #777;
+    background: #454545;
+    margin-bottom: 3em;
 }
 
 .brand, .links {
@@ -31,12 +33,15 @@ nav {
 
 #add a {
     color: #56aaef;
+    padding: 0.7em 0.7em;
+    border-radius: 0.5em;
 }
 
 #add a:hover {
-    background-color: #efefef
+    background-color: #140f42;
 }
 
 .links a {
     padding: .1em .3em;
+    color: #e4e4e4;
 }
