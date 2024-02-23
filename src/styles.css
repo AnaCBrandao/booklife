@@ -8,7 +8,9 @@
 }
 
 body {
-    background-color: #272727;
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://i.pinimg.com/originals/72/1c/68/721c68c83bffa6d2a720313fb08fc27e.gif");
 }
 
 a{
@@ -21,48 +23,6 @@ a{
 a:hover {
     color: #56aaef;
 }
-
-form {
-    width: 450px;
-    margin: 0 auto;
-    font-size: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
-}
-
-.form-group label {
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-bottom: 0.4em;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.6em;
-    font-size: 0.8em;
-    color: #777;
-}
-
-input[type = "submit"] {
-    background: transparent;
-    border: 1px solid #56aaef;
-    border-radius: 0.5em;
-    padding: 0.6em 1em;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: 0.4s;
-    width: 50%;
-}
-
-input[type = "submit"]:hover {
-    color: #56aaef;
-}
-
 
 .edit-btn, .remove-btn{
     border: 1px solid #efefef;

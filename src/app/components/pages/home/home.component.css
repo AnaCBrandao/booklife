@@ -36,6 +36,8 @@
 .search-container{
     margin-bottom: 3em;
     width: 100%;
+    display:flex;
+    justify-content: center;
 }
 
 .search-container form{

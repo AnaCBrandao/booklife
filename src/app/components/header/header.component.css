@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     padding: 1em;
     border-bottom:1px solid #777;
-    background: #454545;
+    background-color: rgba(69, 69, 69, 0.4);
     margin-bottom: 3em;
 }
 
