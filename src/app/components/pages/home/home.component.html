@@ -9,10 +9,17 @@
 
     <div *ngIf="books.length > 0; else noBooks">
         <div class="books-container">
-            <div class="book" *ngFor="let book of books">
-                <a routerLink="books/{{book.id}}"><img src="{{baseApiUrl}}uploads/{{book.image}}" alt="{{book.title}}"></a>
-           </div>
-        </div>   
+            <div class="book" *ngFor="let book of books">         
+                <a routerLink="books/{{book.id}}"><img src="{{baseApiUrl}}uploads/{{book.image}}" alt="{{book.title}}">
+                    <p>
+                        {{book.description}}
+                    </p>
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                </a>                     
+            </div>
+        </div>    
     </div>
 
     <ng-template #noBooks>
