@@ -1,15 +1,64 @@
 .about {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center; 
-    padding: 2em;
+    width: 90%;
+    padding: 1em;
+    margin: 1em auto;
 }
 
-h2, p, h3 {
+h3 {
     margin-bottom: 1em;
+    font-size: 26px;
 }
 
 .about a {
     text-decoration: underline;
+    margin-top: 1em;
 }
+
+.namdhinggo-bold {
+    font-family: "Namdhinggo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+span {
+   color: #007bff;
+  }
+
+h1 {
+    font-size: 3.5em;
+}
+
+.pourpose img {
+    width: 65%;
+    border-radius: 1.3em;
+    margin-bottom: 10%;
+}
+
+p{
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+.author {
+    width: 20%;
+    border-radius: 1.3em;
+    height: 90%;
+    margin-right: 2em
+}
+
+li {
+    margin-bottom: 1em;
+    width: 70%;
+}
+
+.call-to-action {
+    margin: 2em auto;
+    text-align:center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
