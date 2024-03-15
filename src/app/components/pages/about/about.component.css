@@ -34,7 +34,11 @@ h1 {
 .pourpose img {
     width: 65%;
     border-radius: 1.3em;
-    margin-bottom: 10%;
+    
+}
+
+h3 {
+    margin-top: 8%;
 }
 
 p{
@@ -42,16 +46,53 @@ p{
     width: 70%;
 }
 
+.authors {
+    display: flex;
+}
+
 .author {
     width: 20%;
     border-radius: 1.3em;
-    height: 90%;
-    margin-right: 2em
+    background-color: aliceblue;
+    margin-right: 2em;
+    text-align: center;
 }
 
-li {
-    margin-bottom: 1em;
-    width: 70%;
+.author img {
+    width: 100%;
+    height: 350px;
+    border-top-right-radius: 1.3em;
+}
+.author p {
+    position: relative;
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 2em;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 1.3em;
+    padding: 1em;
+    color: black;
+    margin-right: 2em;
+    text-align: center;
+}
+
+.card b {
+    color:#007bff;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .call-to-action {
