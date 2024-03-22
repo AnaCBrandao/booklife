@@ -12,7 +12,7 @@ form {
     min-width: 60%;
     padding: 1em;
     align-items: center;
- 
+    height: 100dvh;
     margin: 0 auto;
 }
 

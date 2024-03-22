@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    align-items: center;
     width: 90%;
     padding: 1em;
     margin: 1em auto;
@@ -37,13 +38,23 @@ h1 {
     
 }
 
+.pourpose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h3 {
-    margin-top: 8%;
+    margin-top: 7%;
 }
 
 p{
-    margin-bottom: 2em;
+    
     width: 70%;
+}
+
+.text {
+    margin-bottom: 2em;
 }
 
 .authors {
@@ -51,11 +62,12 @@ p{
 }
 
 .author {
-    width: 20%;
+    width: 30%;
     border-radius: 1.3em;
     background-color: aliceblue;
     margin-right: 2em;
     text-align: center;
+    height: 420px;
 }
 
 .author img {
@@ -75,10 +87,16 @@ ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+ul .card {
+    margin-bottom: 2em;
 }
 
 .card {
-    margin-bottom: 2em;
+   
     width: 30%;
     background-color: aliceblue;
     border-radius: 1.3em;
@@ -95,6 +113,7 @@ ul {
     margin-bottom: 10px;
 }
 
+
 .call-to-action {
     margin: 2em auto;
     text-align:center;
@@ -103,3 +122,31 @@ ul {
     flex-direction: column;
 }
 
+.number-icon {
+    width: 50px;
+    margin-right: 2em;
+}
+
+.why-us {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.vl {
+    border-left: 6px solid #007bff;
+    height: 40px;
+    left: 50%;
+    margin-right: 2em;
+    z-index: -1;
+  }
+
+.call-to-action {
+    margin-top: 4em;
+    background-color: #93c5ff71;
+    padding: 20px;
+    border-radius: 0.5em;
+}

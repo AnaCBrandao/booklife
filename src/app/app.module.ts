@@ -35,7 +35,7 @@ import { EditBookComponent } from './components/pages/edit-book/edit-book.compon
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
