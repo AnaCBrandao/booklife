@@ -4,7 +4,7 @@
   <img width="150px" src="src/assets/icon.png"/>
 </div>
 <div align="center">
-  <p> <p>
+  <p>A website for people to share opinions and reviews about the books they are reading or intend to read. Made with Angular 14 and consuming the API developed with AdonisJS. <p>
   <img src="https://media.discordapp.net/attachments/767910421025521665/1215412907672735865/image.png?ex=65fca87a&is=65ea337a&hm=5c71c026545917d96e7ee5110e380b8932d5fc3bc645fefe4a77e8b4cc7af8a6&=&format=webp&quality=lossless&width=1027&height=559"/>
 </div>
 
